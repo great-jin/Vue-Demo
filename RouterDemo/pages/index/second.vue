@@ -15,14 +15,13 @@
 		data() {
 			return {
 				addressData: {
-					id: "110",
-					name: "110",
-					sex: "110",
-					age: "110",
+					id: "",
+					name: "",
+					sex: "",
+					age: "",
 				}
 			}
 		},
-		methods: {},
 		watch: {
 		  $route: {
 		    handler: function(val, oldVal){
@@ -31,29 +30,15 @@
 		      if (res) {
 		      	this.addressData = res;
 		      } else {
-		      	this.addressData.id='110',
-		      	this.addressData.name='110',
-		      	this.addressData.sex='110',
-		      	this.addressData.age='110'
+		      	this.addressData.id='',
+		      	this.addressData.name='',
+		      	this.addressData.sex='',
+		      	this.addressData.age=''
 		      }
 		      
 		    },
 		    deep: true
 		  }
-		},
-		onLoad: function() {
-			// let res = this.$route.params.data;
-			// console.log(res==null)
-			// if (res) {
-			// 	this.addressData = res;
-			// } else {
-			// 	this.addressData.id='110',
-			// 	this.addressData.name='110',
-			// 	this.addressData.sex='110',
-			// 	this.addressData.age='110'
-			// }
-
-			// console.log(res)
 		}
 	}
 </script>

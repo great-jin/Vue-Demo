@@ -30,11 +30,8 @@
 				this.info.name = datas.name;
 				this.info.sex= datas.sex;
 				this.info.age = datas.age;
-				
 			}
-		},
-		methods: {
-		},
+		}
 	}
 </script>
 

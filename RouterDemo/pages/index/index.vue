@@ -27,10 +27,7 @@
 					query:{
 						data: this.addressData
 					}
-					 // params:{
-						//  data: this.addressData
-						//  },
-					});
+				});
 			}
 		}
 	}
